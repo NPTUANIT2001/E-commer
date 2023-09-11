@@ -9,9 +9,11 @@ import { AiOutlineShoppingCart, AiOutlineCloseCircle } from "react-icons/ai";
 import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import "./styles.scss";
+import Header from "../../../components/header";
 const Homepage = () => {
   return (
     <>
+    <Header />
       <div className="top_banner">
         <div className="container">
           <div className="detail">
