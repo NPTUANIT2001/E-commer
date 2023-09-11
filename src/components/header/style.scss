@@ -29,6 +29,7 @@
   .main_header .container{
     display: flex;
     justify-content: space-between;
+    background: none;
   }
   .main_header .container .search_box{
     margin-right: 30px;
@@ -90,6 +91,7 @@
     justify-content: space-between;
     padding-top: 12px;
     font-size: 20px;
+    background: none;
 }
 .header .container .nav ul
 {

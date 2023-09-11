@@ -44,7 +44,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        <div className="header">
+        <div className="header" style={{position: "inherit"}}>
             <div className="container">
                 <div className="nav">
                     <ul>

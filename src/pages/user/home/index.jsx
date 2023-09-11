@@ -10,6 +10,7 @@ import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import "./styles.scss";
 import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 const Homepage = () => {
   return (
     <>
@@ -25,86 +26,46 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="" alt="" />
+            <img src="/img/slider-img.png" alt="" />
           </div>
         </div>
       </div>
-      <div className="produc_type">
-        <div className="container">
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+      <div className='product_type'>
+      <div className='container'>
+        <div className='box'>
+          <div className='img_box'>
+            <img src='./img/Mobile Phone.png' alt='mobile'></img>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+          <div className='detail'>
+            <p>23 products</p>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+        </div>
+        <div className='box'>
+          <div className='img_box'>
+            <img src='./img/smart watch.png' alt='watch'></img>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+          <div className='detail'>
+            <p>18 products</p>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+        </div>
+        <div className='box'>
+          <div className='img_box'>
+            <img src='./img/headphone.png' alt='headphone'></img>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+          <div className='detail'>
+            <p>52 products</p>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+        </div>
+        <div className='box'>
+          <div className='img_box'>
+            <img src='./img/cpu heat.png' alt='cpu '></img>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
+          <div className='detail'>
+            <p>63 products</p>
           </div>
         </div>
       </div>
+    </div>
       <div className="about">
         <div className="container">
           <div className="box">
@@ -181,10 +142,11 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="" alt="" />
+            <img src="./img/slider-img.png" alt="sliderimg" />
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
