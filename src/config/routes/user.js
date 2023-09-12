@@ -4,10 +4,12 @@ import Register from "../../pages/home/register";
 import Cart from "../../pages/user/cart";
 import Contact from "../../pages/user/contact";
 import Homepage from "../../pages/user/home";
+import Main from "../../pages/user/main";
+import Product from "../../pages/user/product";
 
 const userRouter = [
   {
-    path: "/*",
+    path: "/login",
     element: <Login />,
   },
   {
@@ -15,16 +17,20 @@ const userRouter = [
     element: <Register />,
   },
   {
-    path: "/cart",
-    element: <Cart />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/home",
-    element: <Homepage />,
+    role: "Role_user",
+    path: "/*",
+    element: <Main />,
+    index: <Homepage />,
+    children: [
+      {
+        path: "home",
+        Component: Homepage,
+      },
+      {
+        path: "product",
+        Component: Product,
+      },
+    ],
   },
 ];
 export default userRouter;

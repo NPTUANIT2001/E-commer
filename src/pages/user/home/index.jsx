@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { FiTruck } from "react-icons/fi";
@@ -10,10 +10,12 @@ import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import "./styles.scss";
 import Header from "../../../components/header";
+import Footer from "../../../components/footer";
+import Homeproduct from "../data/homeProduct";
 const Homepage = () => {
+  const [homeproduct, setHomeproduct] = useState(Homeproduct);
   return (
     <>
-    <Header />
       <div className="top_banner">
         <div className="container">
           <div className="detail">
@@ -25,83 +27,43 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="" alt="" />
+            <img src="/img/slider-img.png" alt="" />
           </div>
         </div>
       </div>
-      <div className="produc_type">
+      <div className="product_type">
         <div className="container">
           <div className="box">
             <div className="img_box">
-              <img src="" alt="" />
+              <img src="./img/Mobile Phone.png" alt="mobile"></img>
             </div>
-            <div className="detail"></div>
+            <div className="detail">
+              <p>23 products</p>
+            </div>
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="" alt="" />
+              <img src="./img/smart watch.png" alt="watch"></img>
             </div>
-            <div className="detail"></div>
+            <div className="detail">
+              <p>18 products</p>
+            </div>
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="" alt="" />
+              <img src="./img/headphone.png" alt="headphone"></img>
             </div>
-            <div className="detail"></div>
+            <div className="detail">
+              <p>52 products</p>
+            </div>
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="" alt="" />
+              <img src="./img/cpu heat.png" alt="cpu "></img>
             </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
+            <div className="detail">
+              <p>63 products</p>
             </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-            </div>
-            <div className="detail"></div>
           </div>
         </div>
       </div>
@@ -146,28 +108,35 @@ const Homepage = () => {
         </div>
       </div>
       <div className="product">
+        <h2>TOP PRODUCT</h2>
         <div className="container">
-          <div className="box">
-            <div className="img_box">
-              <img src="" alt="" />
-              <div className="icon">
-                <li>
-                  <AiOutlineShoppingCart />
-                </li>
-                <li>
-                  <BsEye />
-                </li>
-                <li>
-                  <AiOutlineHeart />
-                </li>
-              </div>
-            </div>
-            <div className="detail">
-              <p></p>
-              <h3></h3>
-              <h4></h4>
-            </div>
-          </div>
+          {homeproduct.map((curElm) => {
+            return (
+              <>
+                <div className="box" key={curElm.id}>
+                  <div className="img_box">
+                    <img src={curElm.Img} alt={curElm.Title} />
+                    <div className="icon">
+                      <li>
+                        <AiOutlineShoppingCart />
+                      </li>
+                      <li>
+                        <BsEye />
+                      </li>
+                      <li>
+                        <AiOutlineHeart />
+                      </li>
+                    </div>
+                  </div>
+                  <div className="detail">
+                    <p>{curElm.Cat}</p>
+                    <h3>{curElm.Title}</h3>
+                    <h4>{curElm.Price}</h4>
+                  </div>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
       <div className="banner">
@@ -181,7 +150,7 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="" alt="" />
+            <img src="./img/slider-img.png" alt="sliderimg" />
           </div>
         </div>
       </div>

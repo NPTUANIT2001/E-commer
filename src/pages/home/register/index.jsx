@@ -38,13 +38,13 @@ const Register = () => {
             <div className="container d-flex justify-content-center align-items-center min-vh-100">
               <div className="row border rounded-5 p-3 bg-white shadow box-area">
                 <div
-                  className="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
-                  style={{ backgroundColor: "#0f3dbd" }}
+                  className="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" 
+                  style={{backgroundColor: "#25A0D5"}}
                 >
                   <div className="featured-image mb-3">
-                    {/* <img src={loginuser} alt="Loginuser" />; */}
+                    <img src="/img/logo.svg" alt="Loginuser" />;
                   </div>
-                  <p className="text-white fs-2">SSSSSSS</p>
+                  <p className="text-white fs-2">Shofy E-commerce</p>
                   <small className="text-white text-wrap text-center">
                     The most popular e-commerce platform in Vietnam
                   </small>
@@ -80,7 +80,7 @@ const Register = () => {
                         <span className="error">{errors.password}</span>
                       )}
                     </div>
-                    <div className="input-group mb-5 d-flex justify-content-between">
+                    {/* <div className="input-group mb-5 d-flex justify-content-between">
                       <div className="forgot">
                         <small>
                           <a href="#">
@@ -88,7 +88,7 @@ const Register = () => {
                           </a>
                         </small>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="input-group mb-3">
                       <button className="btn btn-lg btn-primary w-100 fs-6">
                         Register
@@ -101,7 +101,7 @@ const Register = () => {
                     </div>
                     <div className="row">
                       <small>
-                        Don't have account? <a href="#">Sign Up</a>
+                      Do you already have an account? <a href="/">Login</a>
                       </small>
                     </div>
                   </div>

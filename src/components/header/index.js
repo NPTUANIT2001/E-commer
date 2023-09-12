@@ -32,14 +32,6 @@ const Header = () => {
               </div>
               <p>Hello, user</p>
             </div>
-            <div className="second_icon">
-              <Link to="/" className="link">
-                <AiOutlineHeart />
-              </Link>
-              <Link to="/cart" className="link">
-                <BsBagCheck />
-              </Link>
-            </div>
           </div>
         </div>
       </div>

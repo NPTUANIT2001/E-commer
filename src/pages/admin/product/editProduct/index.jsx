@@ -18,6 +18,10 @@ const EditProduct = () => {
       id: uuidv4(),
       productName: data.namePD,
       category: data.category,
+      color: data.color,
+      storage: data.storage,
+      descripton: data.descripton,
+      pricePD: data.pricePD,
     };
     console.log(dataSubmit);
     dispatch(updateProduct(dataSubmit));
@@ -58,8 +62,8 @@ const EditProduct = () => {
               {...register("color")}
             >
               <option selected>Open this select menu</option>
-              <option value="1">Black</option>
-              <option value="2">White</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
             </select>
           </div>
 
