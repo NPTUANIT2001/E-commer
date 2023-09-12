@@ -4,6 +4,7 @@ import Register from "../../pages/home/register";
 import Cart from "../../pages/user/cart";
 import Contact from "../../pages/user/contact";
 import Homepage from "../../pages/user/home";
+import Product from "../../pages/user/product";
 
 const userRouter = [
   {
@@ -26,5 +27,9 @@ const userRouter = [
     path: "/home",
     element: <Homepage />,
   },
+  {
+    path: "/product",
+    element: <Product />,
+  }
 ];
 export default userRouter;
