@@ -2,7 +2,23 @@ import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import Productdetail from "./productDetail";
 import { BsEye } from "react-icons/bs";
 import "./styles.scss";
+import { useDispatch } from "react-redux";
+import {
+  getAllproductThunk,
+  getByIdProductThunk,
+} from "../../../redux/actions/user/product";
 const Product = () => {
+  const dispatch = useDispatch();
+  dispatch(getAllproductThunk()).then((res) => {
+    if (res.status === 200) {
+      console.log("thanhcong");
+    } else {
+      console.log("that bai");
+    }
+  });
+  const data = { id: "1" };
+  dispatch(getByIdProductThunk(data.id)).then((res) => console.log(res));
+
   return (
     <>
       <div className="products">
