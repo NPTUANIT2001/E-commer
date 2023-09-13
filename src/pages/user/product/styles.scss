@@ -27,6 +27,7 @@
         max-width: 100%;
         display: flex;
         justify-content: space-between;
+        background-color: white;
 
         .filter {
             .categories {
@@ -39,6 +40,7 @@
 
                 ul {
                     margin-top: 10px;
+                    width: 122px;
 
                     li {
                         list-style: none;
@@ -62,18 +64,42 @@
             }
         }
 
+        .box:hover {
+            .detail {
+                h3 {
+                    color: #0989ff
+                }
+            }
+        }
+
         .box {
             padding: 10px 20px;
             overflow: hidden;
             width: 280px;
-            height: 300px;
+            height: 380px;
             border: 1px solid #e2e0e0;
             margin-bottom: 20px;
             transition: 0.5s;
             cursor: pointer;
             border-radius: 5px;
 
+            .detail {
+                margin-top: 10px;
 
+                h3 {
+                    font-size: 16px;
+                    margin-top: 5px;
+                    color: #010f1c;
+                    transition: 0.5s;
+                }
+
+                h4 {
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: #0989ff;
+                    letter-spacing: 1px;
+                }
+            }
 
             .img_box {
                 display: flex;
@@ -85,6 +111,24 @@
                     height: 250px;
                     margin-right: 50px;
                 }
+
+                .icon {
+                    li {
+                        list-style: none;
+                        padding: 10px 10px;
+                        color: #010f1c;
+                        cursor: pointer;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        background: #fff;
+                        transition: 0.5;
+                        font-size: 18px;
+                    }
+
+                    li:hover {
+                        background: #0989ff;
+                        color: #fff
+                    }
+                }
             }
         }
     }
@@ -92,4 +136,12 @@
 
 .box:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    .img_box {
+        .icon {
+            transform: translateX(-130px);
+        }
+    }
+
 }
