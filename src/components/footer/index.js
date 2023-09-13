@@ -3,6 +3,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { RiFacebookFill } from 'react-icons/ri';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsYoutube } from 'react-icons/bs';
+import "./style.scss"
 const Footer = () => {
   return (
     <>
