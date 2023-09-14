@@ -57,29 +57,13 @@ const Register = () => {
                       <p>Thanks for your registry</p>
                     </div>
                     <div className="input-group mb-3">
-                      <input
-                        type="text"
-                        className="form-control form-control-lg bg-light fs-6"
-                        placeholder="Email address"
-                        value={values.email}
-                        onChange={handleChange}
-                      />
-                      {errors.email && (
-                        <span className="error">{errors.email}</span>
-                      )}
-                    </div>
-                    <div className="input-group mb-1">
-                      <input
-                        type="password"
-                        className="form-control form-control-lg bg-light fs-6"
-                        placeholder="Password"
-                        value={values.password}
-                        onChange={handleChange}
-                      />
-                      {errors.password && (
-                        <span className="error">{errors.password}</span>
-                      )}
-                    </div>
+                            <input type="text" className="form-control form-control-lg bg-light fs-6" placeholder="Email address" />
+                            {errors.email && <span className="error">{errors.email}</span>}
+                        </div>
+                        <div className="input-group mb-1">
+                            <input type="password" className="form-control form-control-lg bg-light fs-6" placeholder="Password" />
+                            {errors.password && <span className="error">{errors.password}</span>}
+                        </div>
                     {/* <div className="input-group mb-5 d-flex justify-content-between">
                       <div className="forgot">
                         <small>

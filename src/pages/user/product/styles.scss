@@ -27,7 +27,7 @@
         max-width: 100%;
         display: flex;
         justify-content: space-between;
-
+        background: none;
         .filter {
             .categories {
                 h3 {
@@ -53,8 +53,8 @@
         }
 
         .productbox {
-            margin-right: 10%;
-            margin-left: 10%;
+            margin-right: 5%;
+            margin-left: 5%;
 
             .contant {
                 display: flex;

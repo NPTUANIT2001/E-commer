@@ -7,7 +7,8 @@ import { CiLogin } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import "./style.scss";
-const Header = () => {
+const Header = ({searchbtn}) => {
+  const [search, setSearch] = React.useState()
   return (
     <>
       <div className="free">
@@ -22,8 +23,8 @@ const Header = () => {
             <img src="./img/logo.svg" alt="logo" />
           </div>
           <div className="search_box">
-            <input type="text" value="" placeholder="Search..." />
-            <button>Search</button>
+          <input type='text' value={search} placeholder='Search Your Product...' autoComplete='off' onChange={(e) => setSearch(e.target.value)}></input>
+                <button onClick={() => searchbtn (search)}>Search</button>
           </div>
           <div className="icon">
             <div className="account">

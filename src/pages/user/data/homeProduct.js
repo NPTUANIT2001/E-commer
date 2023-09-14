@@ -55,5 +55,19 @@ const Homeproduct = [
     Price: "386",
     Img: "./img/tp8.jpg",
   },
+  {
+    id: 9,
+    Title: "Microsoft Surface Pro 8-13' Touchscreen.",
+    Cat: "Tablet",
+    Price: "693",
+    Img: "./img/p9.jpg",
+  },
+  {
+    id: 10,
+    Title: "Playstation 4 2TB Slim Gaming Console.",
+    Cat: "Gaming",
+    Price: "5036",
+    Img: "./img/p10.jpg",
+  },
 ];
 export default Homeproduct;

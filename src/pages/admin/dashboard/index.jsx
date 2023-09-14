@@ -7,7 +7,7 @@ const Dashboard = () => {
         <div className="introduction d-flex justify-content-between mt-3">
           <div className="introduction1">
             <span>
-              Hello, <strong> Linh</strong>
+              Hello, <strong> Tuyen</strong>
             </span>
           </div>
           <div className="avatar">
@@ -17,7 +17,7 @@ const Dashboard = () => {
                 alt=""
                 style={{ width: "40px", borderRadius: "50%" }}
               />{" "}
-              Thùy Linh Nguyễn
+              Ngan Tuyen
             </a>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -39,7 +39,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -51,7 +51,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -66,7 +66,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -78,7 +78,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -90,7 +90,7 @@ const Dashboard = () => {
             <div className="card1">
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                  <Card.Title>Nhậu</Card.Title>
+                  <Card.Title>work</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
